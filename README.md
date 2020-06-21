@@ -1,4 +1,18 @@
-# Challenge GoStack NodeJS 🚀
+<h1 align="center">
+  Challenge GoStack NodeJS 🚀
+  <p align="center">
+  <img src="https://img.shields.io/badge/tech-backend-lightgrey" />
+
+  <a href="https://nodejs.org/en/">
+    <img src="https://img.shields.io/badge/framework-NodeJS-green" />
+  </a>
+
+  <a href="https://github.com/Rocketseat">
+    <img src="https://img.shields.io/badge/source-rocketseat-blueviolet" />
+  </a>
+  </p>
+</h1>
+
 Primeiro desafio em [NodeJS](https://nodejs.org/en/ "NodeJS") da [RocketSeat](https://rocketseat.com.br/ "RocketSeat"), passado no bootcamp GoStack 12. 
 
 A proposta é simples: criar uma API para gerenciar repositórios (Fakes), utilizando as operações de CRUD (Create, Read Update, Delete), armazenando os dados em varáveis, na memória. Sendo também possível dar likes nos repositórios.
@@ -55,8 +69,8 @@ São dados complementares ao método http. Temos:
 
 * **DELETE** http://localhost:3333/repositories/1 ⇒ Deleta uma informação no back-end
 
-	#### * HTTP Codes - Respostas
-	Na resposta dada ao cliente é mandado junto um código HTTP que seguem padrões:
+	#### - HTTP Codes - Respostas
+	Na resposta dada ao cliente é mandado junto um código **HTTP** que seguem padrões:
 
 	**1xx**: Os códigos que iniciam com um são informativos.
 
@@ -91,11 +105,11 @@ Eles são funções que recebem os parâmetros **request**, **response** e **nex
 
 ```javascript
   function logRequest(request, response, next) {
-  	const { method, url } = request
- 	 const logLbael = `[${method.toUpperCase()}] ${url}`;
-	  console.log(logLabel);
+    const { method, url } = request
+    const logLbael = `[${method.toUpperCase()}] ${url}`;
+    console.log(logLabel);
 	  
-    #Caso o next não seja execultado, a requisição é interrompida
+    /* Caso o next não seja execultado, a requisição é interrompida */
     return next();
   }
 
@@ -105,5 +119,6 @@ Eles são funções que recebem os parâmetros **request**, **response** e **nex
 ## Considerações :congratulations:
 - Projeto desenvolvido no Bootcamp - GoStack da [RocketSeat](https://rocketseat.com.br/ "RocketSeat")  by:
 
-- <i class="fa fa-github" aria-hidden="true"></i> [Rafael Sanzio - GitHub](https://github.com/rafaelsanzio "Rafael Sanzio")
-- <i class="fa fa-linkedin" aria-hidden="true"></i> [Rafael Sanzio - LinkedIn](https://www.linkedin.com/in/rafael-sanzio-012778143/ "Rafael Sanzio")
+- <img width="20px" src="https://img.icons8.com/fluent/96/github.png" /> [Rafael Sanzio](https://github.com/rafaelsanzio "Rafael Sanzio")
+ 
+- <img width="20px" src="https://img.icons8.com/color/2x/linkedin.png" /> [Rafael Sanzio](https://www.linkedin.com/in/rafael-sanzio-012778143/ "Rafael Sanzio")
